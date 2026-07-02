@@ -1,0 +1,1 @@
+HDFS replicates data across multiple nodes
