@@ -54,8 +54,7 @@ hadoop-cassandra-exercise/
 │   └── reducer_top_songs.py
 │
 ├── jobs/
-├── output/
-└── screenshots/
+└── output/
 ```
 
 ---
