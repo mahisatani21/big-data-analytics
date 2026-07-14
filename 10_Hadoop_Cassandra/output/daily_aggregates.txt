@@ -1,0 +1,731 @@
+2024-01-01	128	121	6.93	Billie Jean	U2
+2024-01-02	120	112	6.85	Bohemian Rhapsody	Queen
+2024-01-03	120	117	6.37	Hotel California	Eagles
+2024-01-04	134	126	6.75	With or Without You	Madonna
+2024-01-05	113	108	6.53	Hey Jude	Pink Floyd
+2024-01-06	140	135	6.74	Bohemian Rhapsody	AC/DC
+2024-01-07	125	119	6.65	With or Without You	Queen
+2024-01-08	150	142	6.66	Hotel California	Pink Floyd
+2024-01-09	158	144	6.87	With or Without You	Led Zeppelin
+2024-01-10	134	124	6.74	Smells Like Teen Spirit	Madonna
+2024-01-11	144	136	6.83	Hey Jude	Pink Floyd
+2024-01-12	117	113	6.40	Comfortably Numb	Pink Floyd
+2024-01-13	135	129	6.64	Stairway to Heaven	Madonna
+2024-01-14	133	123	6.71	Hey Jude	U2
+2024-01-15	143	135	6.56	Bohemian Rhapsody	Led Zeppelin
+2024-01-16	134	122	6.79	With or Without You	Pink Floyd
+2024-01-17	138	133	6.47	Comfortably Numb	Nirvana
+2024-01-18	149	137	7.14	Smells Like Teen Spirit	Pink Floyd
+2024-01-19	135	125	6.77	Like a Prayer	Led Zeppelin
+2024-01-20	135	125	6.70	Like a Prayer	U2
+2024-01-21	156	145	6.79	Bohemian Rhapsody	The Beatles
+2024-01-22	145	138	6.51	Smells Like Teen Spirit	The Beatles
+2024-01-23	133	121	6.54	Billie Jean	Pink Floyd
+2024-01-24	130	123	6.58	Hey Jude	U2
+2024-01-25	135	123	7.17	With or Without You	Madonna
+2024-01-26	131	126	6.51	Like a Prayer	AC/DC
+2024-01-27	145	135	6.81	Back in Black	Pink Floyd
+2024-01-28	145	136	6.62	Smells Like Teen Spirit	Eagles
+2024-01-29	141	134	6.35	Comfortably Numb	Michael Jackson
+2024-01-30	133	126	6.39	Back in Black	Led Zeppelin
+2024-01-31	112	108	6.44	Comfortably Numb	Queen
+2024-02-01	148	139	6.74	With or Without You	The Beatles
+2024-02-02	145	137	6.68	Bohemian Rhapsody	Eagles
+2024-02-03	145	135	6.68	With or Without You	Queen
+2024-02-04	134	128	6.33	Like a Prayer	U2
+2024-02-05	135	123	6.55	Hotel California	AC/DC
+2024-02-06	150	140	6.78	Hotel California	U2
+2024-02-07	119	110	6.81	Hey Jude	Eagles
+2024-02-08	150	137	7.07	Hey Jude	The Beatles
+2024-02-09	131	120	6.81	Bohemian Rhapsody	AC/DC
+2024-02-10	132	126	6.20	Billie Jean	U2
+2024-02-11	173	151	6.94	With or Without You	U2
+2024-02-12	138	126	6.80	Hey Jude	Eagles
+2024-02-13	145	134	6.78	Bohemian Rhapsody	Queen
+2024-02-14	116	111	6.45	Stairway to Heaven	U2
+2024-02-15	135	123	6.79	Hey Jude	The Beatles
+2024-02-16	130	118	6.77	Bohemian Rhapsody	Pink Floyd
+2024-02-17	147	134	7.14	Billie Jean	AC/DC
+2024-02-18	132	123	6.57	Back in Black	Pink Floyd
+2024-02-19	123	116	6.64	Smells Like Teen Spirit	AC/DC
+2024-02-20	128	122	6.72	Smells Like Teen Spirit	AC/DC
+2024-02-21	113	109	6.63	Smells Like Teen Spirit	Led Zeppelin
+2024-02-22	124	116	6.58	With or Without You	AC/DC
+2024-02-23	148	137	6.48	Smells Like Teen Spirit	Madonna
+2024-02-24	141	130	6.79	Comfortably Numb	Michael Jackson
+2024-02-25	141	137	6.25	With or Without You	Eagles
+2024-02-26	115	111	6.28	Like a Prayer	Led Zeppelin
+2024-02-27	138	123	7.15	Like a Prayer	Nirvana
+2024-02-28	151	141	6.70	Back in Black	Michael Jackson
+2024-02-29	145	137	6.95	Back in Black	AC/DC
+2024-03-01	136	125	6.78	Hotel California	AC/DC
+2024-03-02	129	122	6.67	Back in Black	Madonna
+2024-03-03	137	128	6.33	Back in Black	Pink Floyd
+2024-03-04	140	128	7.00	Back in Black	U2
+2024-03-05	124	117	6.43	Bohemian Rhapsody	Pink Floyd
+2024-03-06	155	142	7.06	Billie Jean	Madonna
+2024-03-07	126	119	6.41	Smells Like Teen Spirit	Queen
+2024-03-08	150	139	6.83	Back in Black	Pink Floyd
+2024-03-09	140	133	6.82	Stairway to Heaven	Pink Floyd
+2024-03-10	125	116	6.91	Stairway to Heaven	Queen
+2024-03-11	132	129	6.51	Stairway to Heaven	The Beatles
+2024-03-12	131	121	6.90	Stairway to Heaven	The Beatles
+2024-03-13	137	130	6.90	With or Without You	Queen
+2024-03-14	120	113	6.54	Bohemian Rhapsody	Queen
+2024-03-15	146	140	6.38	Stairway to Heaven	AC/DC
+2024-03-16	126	120	6.61	Comfortably Numb	AC/DC
+2024-03-17	156	142	7.01	Back in Black	Pink Floyd
+2024-03-18	159	146	7.17	Smells Like Teen Spirit	Eagles
+2024-03-19	148	144	6.58	Smells Like Teen Spirit	Michael Jackson
+2024-03-20	115	113	6.22	Comfortably Numb	U2
+2024-03-21	130	127	6.47	Back in Black	The Beatles
+2024-03-22	167	151	6.70	Hotel California	Led Zeppelin
+2024-03-23	141	134	6.29	Back in Black	Eagles
+2024-03-24	142	134	6.33	Bohemian Rhapsody	Pink Floyd
+2024-03-25	147	133	6.88	Smells Like Teen Spirit	Michael Jackson
+2024-03-26	129	121	7.01	Back in Black	Eagles
+2024-03-27	158	145	6.82	Hey Jude	Pink Floyd
+2024-03-28	122	118	6.55	Hotel California	Led Zeppelin
+2024-03-29	158	147	6.89	With or Without You	Queen
+2024-03-30	140	131	6.69	With or Without You	The Beatles
+2024-03-31	120	115	6.37	Billie Jean	Nirvana
+2024-04-01	130	119	6.74	Hotel California	Pink Floyd
+2024-04-02	136	128	6.75	Stairway to Heaven	The Beatles
+2024-04-03	129	124	6.62	Smells Like Teen Spirit	Pink Floyd
+2024-04-04	121	112	6.88	Smells Like Teen Spirit	Eagles
+2024-04-05	131	122	6.72	Back in Black	Nirvana
+2024-04-06	141	129	6.99	Hey Jude	AC/DC
+2024-04-07	130	128	6.34	Like a Prayer	Nirvana
+2024-04-08	146	136	6.69	Hey Jude	Madonna
+2024-04-09	147	141	6.62	With or Without You	Eagles
+2024-04-10	138	128	6.52	Billie Jean	Michael Jackson
+2024-04-11	114	110	6.71	With or Without You	Queen
+2024-04-12	140	136	6.42	Hey Jude	The Beatles
+2024-04-13	161	146	7.09	Hey Jude	Madonna
+2024-04-14	126	117	7.06	Like a Prayer	U2
+2024-04-15	133	125	6.57	Bohemian Rhapsody	The Beatles
+2024-04-16	136	129	6.73	Hotel California	Eagles
+2024-04-17	119	112	6.68	Back in Black	Eagles
+2024-04-18	134	129	6.53	Hey Jude	The Beatles
+2024-04-19	149	138	6.94	Smells Like Teen Spirit	Pink Floyd
+2024-04-20	129	125	6.86	Hotel California	U2
+2024-04-21	126	118	6.61	Stairway to Heaven	Madonna
+2024-04-22	136	127	6.84	Comfortably Numb	U2
+2024-04-23	141	134	6.55	Smells Like Teen Spirit	Led Zeppelin
+2024-04-24	132	120	6.93	Back in Black	Madonna
+2024-04-25	121	113	6.67	Like a Prayer	AC/DC
+2024-04-26	144	130	7.01	Hey Jude	U2
+2024-04-27	151	138	7.01	Smells Like Teen Spirit	Led Zeppelin
+2024-04-28	150	134	7.18	Stairway to Heaven	Pink Floyd
+2024-04-29	127	124	6.49	Comfortably Numb	Eagles
+2024-04-30	116	112	6.63	Smells Like Teen Spirit	AC/DC
+2024-05-01	155	141	6.95	Like a Prayer	Queen
+2024-05-02	141	134	6.38	Hotel California	Eagles
+2024-05-03	138	133	6.89	Comfortably Numb	Michael Jackson
+2024-05-04	160	145	7.06	Comfortably Numb	AC/DC
+2024-05-05	128	120	6.61	With or Without You	Eagles
+2024-05-06	140	135	6.59	Stairway to Heaven	AC/DC
+2024-05-07	127	121	6.38	Comfortably Numb	The Beatles
+2024-05-08	140	132	6.80	With or Without You	Pink Floyd
+2024-05-09	156	149	6.55	With or Without You	Eagles
+2024-05-10	157	143	7.26	Billie Jean	Nirvana
+2024-05-11	161	147	6.86	Billie Jean	Eagles
+2024-05-12	136	125	6.89	Billie Jean	Madonna
+2024-05-13	122	117	6.58	Bohemian Rhapsody	AC/DC
+2024-05-14	138	129	6.74	Smells Like Teen Spirit	Led Zeppelin
+2024-05-15	138	128	6.68	Stairway to Heaven	Pink Floyd
+2024-05-16	135	122	7.41	Comfortably Numb	Queen
+2024-05-17	125	119	6.43	Smells Like Teen Spirit	Queen
+2024-05-18	154	143	6.81	Like a Prayer	Michael Jackson
+2024-05-19	140	131	6.94	Hey Jude	Madonna
+2024-05-20	130	123	6.71	Stairway to Heaven	The Beatles
+2024-05-21	145	137	6.47	Comfortably Numb	Michael Jackson
+2024-05-22	152	145	6.25	Hey Jude	Madonna
+2024-05-23	132	124	6.46	Stairway to Heaven	The Beatles
+2024-05-24	120	112	6.74	Back in Black	The Beatles
+2024-05-25	113	109	6.62	Stairway to Heaven	The Beatles
+2024-05-26	135	127	6.98	Like a Prayer	Michael Jackson
+2024-05-27	130	124	6.42	Billie Jean	Eagles
+2024-05-28	120	117	6.29	With or Without You	Michael Jackson
+2024-05-29	148	140	6.70	Bohemian Rhapsody	Nirvana
+2024-05-30	159	144	6.73	Billie Jean	Pink Floyd
+2024-05-31	130	123	6.71	Like a Prayer	U2
+2024-06-01	154	145	6.48	Bohemian Rhapsody	Michael Jackson
+2024-06-02	120	114	6.51	With or Without You	Eagles
+2024-06-03	125	117	6.65	Hotel California	Eagles
+2024-06-04	138	131	6.91	Smells Like Teen Spirit	Nirvana
+2024-06-05	136	127	6.77	Like a Prayer	Queen
+2024-06-06	149	132	7.09	Bohemian Rhapsody	Nirvana
+2024-06-07	142	132	7.14	Bohemian Rhapsody	Nirvana
+2024-06-08	112	107	6.28	Hey Jude	Pink Floyd
+2024-06-09	134	126	6.35	Hey Jude	Pink Floyd
+2024-06-10	131	127	6.14	Billie Jean	Nirvana
+2024-06-11	129	118	6.39	Smells Like Teen Spirit	Pink Floyd
+2024-06-12	148	131	7.11	With or Without You	Michael Jackson
+2024-06-13	135	127	6.43	With or Without You	Michael Jackson
+2024-06-14	137	126	6.47	Comfortably Numb	AC/DC
+2024-06-15	111	106	6.77	Stairway to Heaven	AC/DC
+2024-06-16	126	120	6.63	Billie Jean	AC/DC
+2024-06-17	147	140	6.34	Back in Black	Queen
+2024-06-18	143	138	6.62	Smells Like Teen Spirit	U2
+2024-06-19	138	129	6.72	Like a Prayer	Queen
+2024-06-20	125	115	6.85	Bohemian Rhapsody	AC/DC
+2024-06-21	138	125	6.83	Back in Black	Michael Jackson
+2024-06-22	122	118	6.55	Bohemian Rhapsody	Eagles
+2024-06-23	142	133	6.73	Like a Prayer	Queen
+2024-06-24	148	138	6.84	Comfortably Numb	Queen
+2024-06-25	152	144	6.29	Bohemian Rhapsody	Eagles
+2024-06-26	138	130	6.90	Stairway to Heaven	Michael Jackson
+2024-06-27	152	138	6.76	Hotel California	Eagles
+2024-06-28	147	140	6.25	Smells Like Teen Spirit	Queen
+2024-06-29	134	123	6.74	With or Without You	Nirvana
+2024-06-30	138	127	6.95	Back in Black	Michael Jackson
+2024-07-01	144	135	6.45	Stairway to Heaven	Led Zeppelin
+2024-07-02	148	134	6.86	Smells Like Teen Spirit	Led Zeppelin
+2024-07-03	113	109	6.58	Back in Black	Eagles
+2024-07-04	143	134	6.96	Bohemian Rhapsody	Led Zeppelin
+2024-07-05	145	130	7.21	With or Without You	The Beatles
+2024-07-06	128	120	6.48	Like a Prayer	U2
+2024-07-07	140	131	6.79	Bohemian Rhapsody	Madonna
+2024-07-08	148	133	6.92	Hotel California	Led Zeppelin
+2024-07-09	141	131	6.98	Bohemian Rhapsody	The Beatles
+2024-07-10	127	119	6.27	With or Without You	Queen
+2024-07-11	129	122	6.67	Bohemian Rhapsody	Michael Jackson
+2024-07-12	134	126	6.71	Hotel California	U2
+2024-07-13	140	133	6.36	Smells Like Teen Spirit	The Beatles
+2024-07-14	107	105	6.48	Bohemian Rhapsody	Eagles
+2024-07-15	162	149	6.70	Stairway to Heaven	Queen
+2024-07-16	157	143	6.71	Back in Black	Pink Floyd
+2024-07-17	146	135	6.46	With or Without You	The Beatles
+2024-07-18	138	132	6.67	Billie Jean	AC/DC
+2024-07-19	134	127	6.38	Smells Like Teen Spirit	Pink Floyd
+2024-07-20	119	117	6.67	Bohemian Rhapsody	Nirvana
+2024-07-21	147	136	6.53	Billie Jean	The Beatles
+2024-07-22	128	119	6.72	With or Without You	U2
+2024-07-23	140	130	6.40	Billie Jean	AC/DC
+2024-07-24	129	123	6.67	Back in Black	Pink Floyd
+2024-07-25	143	136	6.29	Bohemian Rhapsody	Michael Jackson
+2024-07-26	140	133	6.65	Hey Jude	Queen
+2024-07-27	144	124	7.42	Hotel California	Madonna
+2024-07-28	124	116	6.57	Like a Prayer	Pink Floyd
+2024-07-29	132	127	6.63	Hotel California	The Beatles
+2024-07-30	163	149	6.94	Stairway to Heaven	Queen
+2024-07-31	150	139	6.87	Smells Like Teen Spirit	Eagles
+2024-08-01	115	108	6.81	Hotel California	Led Zeppelin
+2024-08-02	138	127	6.67	Billie Jean	AC/DC
+2024-08-03	132	124	6.87	Comfortably Numb	Michael Jackson
+2024-08-04	143	136	6.72	With or Without You	U2
+2024-08-05	117	108	6.70	Bohemian Rhapsody	Nirvana
+2024-08-06	140	132	6.67	Stairway to Heaven	Led Zeppelin
+2024-08-07	145	142	6.52	Smells Like Teen Spirit	Madonna
+2024-08-08	121	115	6.70	Like a Prayer	Nirvana
+2024-08-09	127	119	6.56	Bohemian Rhapsody	Madonna
+2024-08-10	146	139	6.89	Stairway to Heaven	Eagles
+2024-08-11	139	130	6.70	Billie Jean	Nirvana
+2024-08-12	134	126	6.57	Comfortably Numb	AC/DC
+2024-08-13	130	124	6.66	Comfortably Numb	Pink Floyd
+2024-08-14	136	127	6.62	Back in Black	Pink Floyd
+2024-08-15	130	124	6.63	Comfortably Numb	U2
+2024-08-16	150	141	6.46	Back in Black	Madonna
+2024-08-17	121	114	6.79	Bohemian Rhapsody	AC/DC
+2024-08-18	148	136	6.43	Hotel California	Led Zeppelin
+2024-08-19	131	130	6.31	Bohemian Rhapsody	Queen
+2024-08-20	133	131	6.32	Like a Prayer	Pink Floyd
+2024-08-21	151	134	7.12	Comfortably Numb	Nirvana
+2024-08-22	142	131	6.99	Bohemian Rhapsody	Queen
+2024-08-23	137	131	6.70	Hotel California	Pink Floyd
+2024-08-24	125	119	6.58	Bohemian Rhapsody	Pink Floyd
+2024-08-25	145	133	6.87	Hey Jude	AC/DC
+2024-08-26	145	137	6.30	Comfortably Numb	AC/DC
+2024-08-27	135	130	6.36	Hotel California	Eagles
+2024-08-28	128	114	6.90	Back in Black	Michael Jackson
+2024-08-29	125	118	6.58	Stairway to Heaven	Nirvana
+2024-08-30	138	128	6.60	Bohemian Rhapsody	Queen
+2024-08-31	146	139	6.77	Smells Like Teen Spirit	Michael Jackson
+2024-09-01	142	130	6.62	Smells Like Teen Spirit	Queen
+2024-09-02	140	130	6.98	Like a Prayer	Eagles
+2024-09-03	164	147	6.99	Bohemian Rhapsody	Nirvana
+2024-09-04	139	132	6.19	Like a Prayer	U2
+2024-09-05	140	131	6.54	Comfortably Numb	Pink Floyd
+2024-09-06	138	125	6.92	Back in Black	Madonna
+2024-09-07	126	120	6.76	Smells Like Teen Spirit	The Beatles
+2024-09-08	134	124	6.77	Smells Like Teen Spirit	Nirvana
+2024-09-09	132	128	6.51	Smells Like Teen Spirit	Led Zeppelin
+2024-09-10	146	133	6.84	Billie Jean	Michael Jackson
+2024-09-11	129	123	6.78	Like a Prayer	Michael Jackson
+2024-09-12	139	130	6.88	Comfortably Numb	U2
+2024-09-13	130	120	6.87	Hey Jude	Nirvana
+2024-09-14	147	140	6.60	Hotel California	AC/DC
+2024-09-15	136	122	6.79	Bohemian Rhapsody	Nirvana
+2024-09-16	145	133	6.80	Like a Prayer	The Beatles
+2024-09-17	149	139	6.77	Hey Jude	AC/DC
+2024-09-18	139	130	6.59	Smells Like Teen Spirit	Michael Jackson
+2024-09-19	115	108	6.81	Comfortably Numb	Queen
+2024-09-20	140	132	6.75	Bohemian Rhapsody	Michael Jackson
+2024-09-21	137	131	6.35	Hey Jude	U2
+2024-09-22	138	131	6.66	Back in Black	Eagles
+2024-09-23	142	133	6.54	Smells Like Teen Spirit	Madonna
+2024-09-24	142	131	6.76	Billie Jean	Eagles
+2024-09-25	125	119	6.59	Smells Like Teen Spirit	Led Zeppelin
+2024-09-26	120	115	6.46	Hotel California	Queen
+2024-09-27	128	121	6.62	Like a Prayer	Queen
+2024-09-28	123	120	6.20	Hey Jude	Eagles
+2024-09-29	150	134	7.05	Billie Jean	Nirvana
+2024-09-30	127	119	6.44	Billie Jean	Queen
+2024-10-01	153	140	6.94	Comfortably Numb	Michael Jackson
+2024-10-02	152	138	6.76	Billie Jean	Pink Floyd
+2024-10-03	121	114	6.50	Smells Like Teen Spirit	U2
+2024-10-04	139	135	6.00	Bohemian Rhapsody	Nirvana
+2024-10-05	133	126	6.71	With or Without You	Eagles
+2024-10-06	128	121	6.75	Bohemian Rhapsody	AC/DC
+2024-10-07	141	133	6.70	Like a Prayer	U2
+2024-10-08	134	126	6.63	Smells Like Teen Spirit	Led Zeppelin
+2024-10-09	158	141	6.97	Stairway to Heaven	Led Zeppelin
+2024-10-10	146	136	6.65	Back in Black	U2
+2024-10-11	141	134	6.61	Billie Jean	U2
+2024-10-12	139	131	6.72	Bohemian Rhapsody	Madonna
+2024-10-13	135	127	6.67	Hotel California	The Beatles
+2024-10-14	145	138	6.59	Stairway to Heaven	Led Zeppelin
+2024-10-15	133	119	7.10	Smells Like Teen Spirit	U2
+2024-10-16	141	130	6.52	Back in Black	AC/DC
+2024-10-17	144	127	7.16	Comfortably Numb	Led Zeppelin
+2024-10-18	133	124	6.72	Billie Jean	Madonna
+2024-10-19	153	145	6.53	Comfortably Numb	Michael Jackson
+2024-10-20	133	128	7.09	Comfortably Numb	Nirvana
+2024-10-21	134	122	7.14	Smells Like Teen Spirit	Michael Jackson
+2024-10-22	136	121	6.99	Stairway to Heaven	Queen
+2024-10-23	127	122	6.90	Hey Jude	Eagles
+2024-10-24	129	117	6.70	Smells Like Teen Spirit	Nirvana
+2024-10-25	127	120	6.31	Hey Jude	Michael Jackson
+2024-10-26	144	135	6.99	Comfortably Numb	The Beatles
+2024-10-27	138	133	6.19	Like a Prayer	U2
+2024-10-28	147	135	7.06	Hey Jude	Pink Floyd
+2024-10-29	140	129	6.74	Smells Like Teen Spirit	Eagles
+2024-10-30	150	148	6.07	With or Without You	Nirvana
+2024-10-31	119	113	6.90	Hey Jude	Michael Jackson
+2024-11-01	132	127	6.41	Smells Like Teen Spirit	Pink Floyd
+2024-11-02	123	117	6.42	Hotel California	Eagles
+2024-11-03	148	139	6.91	With or Without You	The Beatles
+2024-11-04	136	131	6.32	Hotel California	Pink Floyd
+2024-11-05	138	128	6.89	Back in Black	Pink Floyd
+2024-11-06	155	148	6.65	Like a Prayer	AC/DC
+2024-11-07	137	130	6.29	Stairway to Heaven	U2
+2024-11-08	112	109	6.26	Hotel California	Nirvana
+2024-11-09	143	128	7.11	Smells Like Teen Spirit	AC/DC
+2024-11-10	132	119	6.97	Billie Jean	Led Zeppelin
+2024-11-11	152	139	6.77	Comfortably Numb	Queen
+2024-11-12	153	141	6.70	Billie Jean	Eagles
+2024-11-13	132	123	6.61	Smells Like Teen Spirit	The Beatles
+2024-11-14	137	129	6.77	Billie Jean	Led Zeppelin
+2024-11-15	140	128	6.58	Comfortably Numb	Michael Jackson
+2024-11-16	129	122	6.41	Billie Jean	Queen
+2024-11-17	137	131	6.40	Back in Black	Led Zeppelin
+2024-11-18	120	108	6.86	Bohemian Rhapsody	Michael Jackson
+2024-11-19	128	115	7.11	Smells Like Teen Spirit	U2
+2024-11-20	123	117	6.53	Hotel California	AC/DC
+2024-11-21	124	117	6.72	Bohemian Rhapsody	The Beatles
+2024-11-22	139	128	7.16	Back in Black	AC/DC
+2024-11-23	135	126	6.67	Smells Like Teen Spirit	Queen
+2024-11-24	124	119	6.27	Hey Jude	Pink Floyd
+2024-11-25	124	117	6.57	Bohemian Rhapsody	Led Zeppelin
+2024-11-26	139	128	6.71	Hotel California	Queen
+2024-11-27	131	125	6.59	Back in Black	Queen
+2024-11-28	132	123	6.67	Stairway to Heaven	Nirvana
+2024-11-29	176	156	7.06	Like a Prayer	AC/DC
+2024-11-30	136	132	6.51	Hey Jude	Led Zeppelin
+2024-12-01	137	127	6.69	Smells Like Teen Spirit	The Beatles
+2024-12-02	141	129	6.72	Comfortably Numb	Led Zeppelin
+2024-12-03	144	134	6.46	Back in Black	Eagles
+2024-12-04	131	121	6.85	Hey Jude	Madonna
+2024-12-05	137	127	6.70	Hey Jude	Queen
+2024-12-06	140	132	6.63	With or Without You	The Beatles
+2024-12-07	113	106	6.68	Hotel California	Nirvana
+2024-12-08	147	138	6.73	Billie Jean	Michael Jackson
+2024-12-09	127	121	6.44	Comfortably Numb	Madonna
+2024-12-10	140	128	6.77	Hey Jude	Michael Jackson
+2024-12-11	133	125	6.75	Billie Jean	Eagles
+2024-12-12	127	118	6.76	Billie Jean	The Beatles
+2024-12-13	131	125	6.59	Hey Jude	Pink Floyd
+2024-12-14	113	107	6.41	Comfortably Numb	The Beatles
+2024-12-15	147	131	7.24	Hey Jude	Madonna
+2024-12-16	121	115	6.39	Hotel California	Nirvana
+2024-12-17	132	121	6.90	Billie Jean	The Beatles
+2024-12-18	129	113	7.15	With or Without You	Nirvana
+2024-12-19	124	117	6.49	Smells Like Teen Spirit	Michael Jackson
+2024-12-20	150	139	6.88	With or Without You	Eagles
+2024-12-21	121	113	6.64	With or Without You	Madonna
+2024-12-22	141	130	6.65	Hotel California	Nirvana
+2024-12-23	146	137	6.64	Hotel California	Eagles
+2024-12-24	137	129	6.78	Stairway to Heaven	Nirvana
+2024-12-25	156	139	6.44	Like a Prayer	Eagles
+2024-12-26	139	127	6.65	Hey Jude	Queen
+2024-12-27	144	135	6.62	Back in Black	Pink Floyd
+2024-12-28	132	122	6.67	Smells Like Teen Spirit	Michael Jackson
+2024-12-29	119	112	6.73	Back in Black	Queen
+2024-12-30	147	139	6.73	Bohemian Rhapsody	Eagles
+2024-12-31	145	136	6.65	Billie Jean	Madonna
+2025-01-01	137	131	6.74	Billie Jean	Michael Jackson
+2025-01-02	122	119	5.94	Hey Jude	U2
+2025-01-03	136	123	7.05	Comfortably Numb	The Beatles
+2025-01-04	136	127	6.51	Like a Prayer	Michael Jackson
+2025-01-05	142	134	6.74	Back in Black	Michael Jackson
+2025-01-06	138	132	6.54	Smells Like Teen Spirit	AC/DC
+2025-01-07	160	148	6.87	Billie Jean	The Beatles
+2025-01-08	143	138	6.39	Hey Jude	Eagles
+2025-01-09	131	124	6.59	Billie Jean	Pink Floyd
+2025-01-10	151	141	6.75	Stairway to Heaven	Michael Jackson
+2025-01-11	146	129	7.44	Bohemian Rhapsody	Pink Floyd
+2025-01-12	141	127	6.77	Back in Black	Nirvana
+2025-01-13	138	129	6.79	Back in Black	Michael Jackson
+2025-01-14	133	125	6.84	With or Without You	AC/DC
+2025-01-15	130	120	7.25	Like a Prayer	Pink Floyd
+2025-01-16	139	128	6.79	Comfortably Numb	Pink Floyd
+2025-01-17	129	122	6.58	Billie Jean	Madonna
+2025-01-18	127	118	6.57	Like a Prayer	AC/DC
+2025-01-19	121	112	6.94	Like a Prayer	The Beatles
+2025-01-20	136	129	6.50	Back in Black	U2
+2025-01-21	152	146	6.55	Like a Prayer	Michael Jackson
+2025-01-22	147	135	6.49	Smells Like Teen Spirit	Madonna
+2025-01-23	125	118	6.37	Stairway to Heaven	Queen
+2025-01-24	138	128	6.74	Like a Prayer	Led Zeppelin
+2025-01-25	167	154	6.60	Like a Prayer	AC/DC
+2025-01-26	125	118	6.70	Hey Jude	Pink Floyd
+2025-01-27	138	128	6.30	Bohemian Rhapsody	Michael Jackson
+2025-01-28	119	108	6.98	Billie Jean	Michael Jackson
+2025-01-29	132	123	6.53	Comfortably Numb	U2
+2025-01-30	128	118	6.54	Back in Black	AC/DC
+2025-01-31	120	114	6.84	Billie Jean	Eagles
+2025-02-01	151	139	6.46	Stairway to Heaven	AC/DC
+2025-02-02	135	123	6.85	Stairway to Heaven	Led Zeppelin
+2025-02-03	128	122	6.57	Like a Prayer	Eagles
+2025-02-04	128	122	6.39	Hotel California	AC/DC
+2025-02-05	149	139	6.82	Stairway to Heaven	AC/DC
+2025-02-06	167	154	6.91	With or Without You	Queen
+2025-02-07	126	118	6.35	Comfortably Numb	AC/DC
+2025-02-08	151	141	6.94	Hotel California	Madonna
+2025-02-09	144	139	6.21	Bohemian Rhapsody	Eagles
+2025-02-10	137	130	6.27	Smells Like Teen Spirit	Eagles
+2025-02-11	135	126	7.00	Comfortably Numb	U2
+2025-02-12	131	117	6.82	Smells Like Teen Spirit	Led Zeppelin
+2025-02-13	141	136	6.53	Back in Black	Led Zeppelin
+2025-02-14	124	116	6.35	Bohemian Rhapsody	Led Zeppelin
+2025-02-15	133	122	6.89	Stairway to Heaven	The Beatles
+2025-02-16	135	125	7.02	Comfortably Numb	Eagles
+2025-02-17	147	138	6.60	Like a Prayer	Led Zeppelin
+2025-02-18	124	114	6.59	Stairway to Heaven	The Beatles
+2025-02-19	131	120	7.00	Hey Jude	Eagles
+2025-02-20	136	121	7.09	Hey Jude	Madonna
+2025-02-21	136	126	6.85	Hey Jude	Queen
+2025-02-22	137	131	6.74	Hotel California	Michael Jackson
+2025-02-23	110	105	6.66	Billie Jean	Madonna
+2025-02-24	152	143	6.69	Stairway to Heaven	Nirvana
+2025-02-25	131	124	6.38	Hey Jude	The Beatles
+2025-02-26	148	140	6.57	Billie Jean	Pink Floyd
+2025-02-27	143	132	6.79	Back in Black	Queen
+2025-02-28	144	132	6.84	Back in Black	Madonna
+2025-03-01	144	137	6.19	Hotel California	Pink Floyd
+2025-03-02	147	133	6.78	Comfortably Numb	AC/DC
+2025-03-03	141	131	6.97	Smells Like Teen Spirit	Madonna
+2025-03-04	131	124	6.49	Smells Like Teen Spirit	Michael Jackson
+2025-03-05	130	123	6.64	Billie Jean	Michael Jackson
+2025-03-06	130	119	6.85	Hotel California	Nirvana
+2025-03-07	145	129	6.84	Back in Black	Madonna
+2025-03-08	138	127	6.34	Hotel California	Michael Jackson
+2025-03-09	143	132	6.74	Smells Like Teen Spirit	Michael Jackson
+2025-03-10	136	129	6.38	Smells Like Teen Spirit	Madonna
+2025-03-11	160	151	6.89	Bohemian Rhapsody	Pink Floyd
+2025-03-12	152	141	6.40	Bohemian Rhapsody	Led Zeppelin
+2025-03-13	136	131	6.47	Like a Prayer	Madonna
+2025-03-14	166	154	6.86	With or Without You	Eagles
+2025-03-15	137	130	6.50	Hotel California	Queen
+2025-03-16	142	130	7.05	Like a Prayer	Queen
+2025-03-17	141	133	6.20	Stairway to Heaven	AC/DC
+2025-03-18	142	133	7.07	With or Without You	Led Zeppelin
+2025-03-19	118	108	6.78	Like a Prayer	Queen
+2025-03-20	137	120	7.24	Like a Prayer	The Beatles
+2025-03-21	157	146	6.31	Stairway to Heaven	Madonna
+2025-03-22	136	130	6.32	Billie Jean	U2
+2025-03-23	130	123	6.66	Like a Prayer	Led Zeppelin
+2025-03-24	139	127	6.60	Smells Like Teen Spirit	Pink Floyd
+2025-03-25	130	119	6.98	Back in Black	Queen
+2025-03-26	130	122	6.52	Billie Jean	U2
+2025-03-27	107	102	6.50	Back in Black	Queen
+2025-03-28	131	126	6.52	With or Without You	Nirvana
+2025-03-29	132	125	6.56	Back in Black	Michael Jackson
+2025-03-30	137	128	6.52	Like a Prayer	Madonna
+2025-03-31	134	123	7.03	Billie Jean	Michael Jackson
+2025-04-01	147	132	7.15	Back in Black	Michael Jackson
+2025-04-02	133	123	6.46	Comfortably Numb	Queen
+2025-04-03	139	131	6.77	With or Without You	Pink Floyd
+2025-04-04	153	142	6.92	Comfortably Numb	Queen
+2025-04-05	144	135	6.67	Hey Jude	Queen
+2025-04-06	139	129	6.64	Like a Prayer	Queen
+2025-04-07	132	126	6.69	Like a Prayer	Madonna
+2025-04-08	148	140	6.77	Like a Prayer	Nirvana
+2025-04-09	146	138	6.45	Bohemian Rhapsody	Nirvana
+2025-04-10	139	133	6.60	Back in Black	Michael Jackson
+2025-04-11	123	115	6.56	Stairway to Heaven	Eagles
+2025-04-12	117	109	6.84	Like a Prayer	AC/DC
+2025-04-13	130	124	6.90	Hey Jude	Nirvana
+2025-04-14	118	108	6.56	Billie Jean	Queen
+2025-04-15	145	133	6.40	Bohemian Rhapsody	Pink Floyd
+2025-04-16	142	137	6.74	Smells Like Teen Spirit	Eagles
+2025-04-17	149	137	6.90	Hey Jude	Michael Jackson
+2025-04-18	133	127	6.69	Back in Black	U2
+2025-04-19	118	109	6.66	Hey Jude	Eagles
+2025-04-20	147	139	6.70	Billie Jean	U2
+2025-04-21	147	136	6.68	Billie Jean	Queen
+2025-04-22	125	117	6.81	Back in Black	Michael Jackson
+2025-04-23	140	129	6.75	Billie Jean	Madonna
+2025-04-24	125	120	6.40	Smells Like Teen Spirit	Queen
+2025-04-25	124	111	6.80	Stairway to Heaven	Pink Floyd
+2025-04-26	135	127	6.37	Smells Like Teen Spirit	Eagles
+2025-04-27	139	135	6.69	Hey Jude	Eagles
+2025-04-28	158	145	7.03	Hey Jude	U2
+2025-04-29	131	118	6.62	Back in Black	U2
+2025-04-30	147	139	6.60	Smells Like Teen Spirit	Nirvana
+2025-05-01	124	113	6.79	Billie Jean	Michael Jackson
+2025-05-02	154	146	6.52	Smells Like Teen Spirit	The Beatles
+2025-05-03	141	133	6.72	Bohemian Rhapsody	Michael Jackson
+2025-05-04	130	116	6.94	Stairway to Heaven	The Beatles
+2025-05-05	153	140	6.94	With or Without You	Madonna
+2025-05-06	132	125	6.89	Billie Jean	Michael Jackson
+2025-05-07	139	131	6.80	Billie Jean	The Beatles
+2025-05-08	122	118	6.56	Hey Jude	Nirvana
+2025-05-09	137	125	6.98	Like a Prayer	Nirvana
+2025-05-10	135	123	6.51	Back in Black	U2
+2025-05-11	116	110	7.17	Comfortably Numb	Pink Floyd
+2025-05-12	149	137	6.89	Like a Prayer	AC/DC
+2025-05-13	134	125	6.60	Stairway to Heaven	Led Zeppelin
+2025-05-14	146	137	6.68	Billie Jean	Queen
+2025-05-15	126	119	6.67	With or Without You	Michael Jackson
+2025-05-16	140	133	6.63	Stairway to Heaven	Madonna
+2025-05-17	151	137	6.98	With or Without You	Pink Floyd
+2025-05-18	121	114	6.60	With or Without You	Queen
+2025-05-19	140	129	6.61	Smells Like Teen Spirit	Pink Floyd
+2025-05-20	157	142	6.96	Stairway to Heaven	U2
+2025-05-21	145	136	6.81	Bohemian Rhapsody	U2
+2025-05-22	142	133	6.54	Bohemian Rhapsody	The Beatles
+2025-05-23	117	111	6.48	Back in Black	Pink Floyd
+2025-05-24	133	124	6.73	Stairway to Heaven	U2
+2025-05-25	151	133	7.05	Hotel California	U2
+2025-05-26	133	125	6.73	Billie Jean	Eagles
+2025-05-27	138	130	6.51	With or Without You	Michael Jackson
+2025-05-28	144	133	7.23	With or Without You	Queen
+2025-05-29	138	130	6.62	With or Without You	Eagles
+2025-05-30	137	129	6.44	Back in Black	AC/DC
+2025-05-31	106	103	6.22	Back in Black	Pink Floyd
+2025-06-01	142	131	6.86	Billie Jean	The Beatles
+2025-06-02	127	119	6.71	Bohemian Rhapsody	AC/DC
+2025-06-03	131	124	6.55	With or Without You	Queen
+2025-06-04	122	119	6.57	Hotel California	U2
+2025-06-05	133	125	6.83	With or Without You	Queen
+2025-06-06	151	148	6.76	Like a Prayer	Led Zeppelin
+2025-06-07	126	115	7.08	Comfortably Numb	U2
+2025-06-08	126	122	6.16	Stairway to Heaven	Led Zeppelin
+2025-06-09	128	121	6.96	With or Without You	U2
+2025-06-10	148	135	7.16	Bohemian Rhapsody	Pink Floyd
+2025-06-11	156	143	6.39	Stairway to Heaven	AC/DC
+2025-06-12	150	138	6.69	Hotel California	Madonna
+2025-06-13	107	104	6.35	Like a Prayer	AC/DC
+2025-06-14	143	134	6.38	With or Without You	AC/DC
+2025-06-15	118	114	6.13	Bohemian Rhapsody	The Beatles
+2025-06-16	131	125	6.31	Billie Jean	Madonna
+2025-06-17	143	134	6.94	Smells Like Teen Spirit	The Beatles
+2025-06-18	135	128	6.41	Bohemian Rhapsody	Led Zeppelin
+2025-06-19	146	134	6.74	Billie Jean	Nirvana
+2025-06-20	140	126	6.89	Back in Black	U2
+2025-06-21	122	116	6.74	Bohemian Rhapsody	Michael Jackson
+2025-06-22	154	146	6.47	Stairway to Heaven	U2
+2025-06-23	114	106	6.79	Hotel California	Nirvana
+2025-06-24	137	124	6.82	Bohemian Rhapsody	The Beatles
+2025-06-25	147	136	6.72	Hey Jude	U2
+2025-06-26	119	111	7.09	Hotel California	Queen
+2025-06-27	153	139	7.13	Stairway to Heaven	Eagles
+2025-06-28	142	135	6.48	Bohemian Rhapsody	Led Zeppelin
+2025-06-29	145	137	6.67	Billie Jean	U2
+2025-06-30	133	124	6.34	Comfortably Numb	Madonna
+2025-07-01	127	123	6.74	Stairway to Heaven	Led Zeppelin
+2025-07-02	147	136	6.71	Billie Jean	Queen
+2025-07-03	141	132	6.88	Stairway to Heaven	Queen
+2025-07-04	127	121	6.71	Back in Black	Queen
+2025-07-05	137	130	6.40	Smells Like Teen Spirit	Pink Floyd
+2025-07-06	144	133	6.48	Billie Jean	Madonna
+2025-07-07	135	127	6.82	Smells Like Teen Spirit	Led Zeppelin
+2025-07-08	138	126	6.73	Billie Jean	Eagles
+2025-07-09	158	144	6.99	Back in Black	The Beatles
+2025-07-10	138	123	7.20	Billie Jean	Michael Jackson
+2025-07-11	138	130	6.94	Hotel California	Michael Jackson
+2025-07-12	129	123	6.34	Stairway to Heaven	Led Zeppelin
+2025-07-13	125	118	6.20	Stairway to Heaven	The Beatles
+2025-07-14	145	140	6.39	Stairway to Heaven	Nirvana
+2025-07-15	133	127	6.28	Hotel California	Queen
+2025-07-16	138	131	6.40	Billie Jean	Michael Jackson
+2025-07-17	120	115	6.54	Comfortably Numb	Eagles
+2025-07-18	137	127	6.90	Bohemian Rhapsody	Pink Floyd
+2025-07-19	129	119	6.57	Comfortably Numb	Eagles
+2025-07-20	142	138	6.09	Smells Like Teen Spirit	Queen
+2025-07-21	147	140	6.45	Comfortably Numb	Queen
+2025-07-22	131	119	6.45	Stairway to Heaven	The Beatles
+2025-07-23	127	122	6.56	Smells Like Teen Spirit	Michael Jackson
+2025-07-24	143	136	6.76	Smells Like Teen Spirit	Queen
+2025-07-25	138	128	6.62	Hey Jude	Madonna
+2025-07-26	141	129	6.64	Like a Prayer	Eagles
+2025-07-27	131	123	6.52	Hey Jude	U2
+2025-07-28	133	126	6.49	Back in Black	Michael Jackson
+2025-07-29	153	141	6.76	Bohemian Rhapsody	Led Zeppelin
+2025-07-30	135	124	6.66	Back in Black	AC/DC
+2025-07-31	130	124	6.47	Stairway to Heaven	U2
+2025-08-01	136	125	7.00	Hotel California	Nirvana
+2025-08-02	133	122	6.56	Stairway to Heaven	AC/DC
+2025-08-03	120	113	6.73	Comfortably Numb	AC/DC
+2025-08-04	134	127	6.50	Hey Jude	Eagles
+2025-08-05	170	159	6.37	Hey Jude	Led Zeppelin
+2025-08-06	127	115	7.29	Comfortably Numb	Michael Jackson
+2025-08-07	143	136	6.50	With or Without You	Pink Floyd
+2025-08-08	136	126	6.84	Comfortably Numb	U2
+2025-08-09	126	113	6.83	Back in Black	Nirvana
+2025-08-10	148	138	6.63	Comfortably Numb	Nirvana
+2025-08-11	146	135	6.79	Bohemian Rhapsody	Michael Jackson
+2025-08-12	138	129	6.46	Hey Jude	The Beatles
+2025-08-13	157	150	6.12	Like a Prayer	Led Zeppelin
+2025-08-14	129	120	6.32	Hotel California	Led Zeppelin
+2025-08-15	129	123	6.48	Hotel California	Led Zeppelin
+2025-08-16	137	131	6.82	Hotel California	U2
+2025-08-17	130	122	6.72	Smells Like Teen Spirit	The Beatles
+2025-08-18	139	134	6.43	Like a Prayer	U2
+2025-08-19	134	126	6.81	Billie Jean	Queen
+2025-08-20	124	119	6.58	Like a Prayer	Eagles
+2025-08-21	148	137	6.55	Back in Black	The Beatles
+2025-08-22	133	123	6.63	Smells Like Teen Spirit	U2
+2025-08-23	135	128	6.66	Stairway to Heaven	Michael Jackson
+2025-08-24	148	138	6.75	Smells Like Teen Spirit	U2
+2025-08-25	145	133	6.73	Smells Like Teen Spirit	The Beatles
+2025-08-26	132	128	6.31	Comfortably Numb	Madonna
+2025-08-27	153	143	6.66	Stairway to Heaven	Queen
+2025-08-28	120	112	6.67	Smells Like Teen Spirit	Nirvana
+2025-08-29	146	135	6.96	Hotel California	Eagles
+2025-08-30	147	136	7.00	Back in Black	Michael Jackson
+2025-08-31	144	135	6.79	Back in Black	Pink Floyd
+2025-09-01	128	118	6.93	Hey Jude	Michael Jackson
+2025-09-02	145	133	6.71	Hotel California	Queen
+2025-09-03	151	143	6.84	Hotel California	The Beatles
+2025-09-04	133	120	6.89	Billie Jean	The Beatles
+2025-09-05	126	117	6.48	Bohemian Rhapsody	Madonna
+2025-09-06	135	128	6.54	Smells Like Teen Spirit	Eagles
+2025-09-07	133	127	6.34	Hotel California	The Beatles
+2025-09-08	139	130	6.52	Hey Jude	Pink Floyd
+2025-09-09	135	127	6.61	Comfortably Numb	AC/DC
+2025-09-10	134	126	6.61	Hotel California	Led Zeppelin
+2025-09-11	118	111	6.54	Comfortably Numb	Led Zeppelin
+2025-09-12	111	99	6.95	Hotel California	Madonna
+2025-09-13	126	117	6.92	Smells Like Teen Spirit	Eagles
+2025-09-14	154	142	6.90	Bohemian Rhapsody	Queen
+2025-09-15	149	139	6.52	With or Without You	U2
+2025-09-16	157	146	6.85	Comfortably Numb	Nirvana
+2025-09-17	142	135	6.82	Hotel California	The Beatles
+2025-09-18	138	132	6.48	Smells Like Teen Spirit	Queen
+2025-09-19	146	134	6.84	Comfortably Numb	AC/DC
+2025-09-20	156	141	6.99	Smells Like Teen Spirit	The Beatles
+2025-09-21	147	138	6.54	Hotel California	Eagles
+2025-09-22	139	129	7.20	Hey Jude	The Beatles
+2025-09-23	133	124	7.05	Comfortably Numb	Nirvana
+2025-09-24	157	147	6.39	Smells Like Teen Spirit	U2
+2025-09-25	123	117	6.36	Hey Jude	Led Zeppelin
+2025-09-26	142	129	7.20	Hey Jude	U2
+2025-09-27	122	117	6.47	With or Without You	The Beatles
+2025-09-28	144	132	6.45	Like a Prayer	Pink Floyd
+2025-09-29	148	136	6.75	With or Without You	Pink Floyd
+2025-09-30	158	139	7.21	Comfortably Numb	AC/DC
+2025-10-01	141	129	6.98	Stairway to Heaven	Nirvana
+2025-10-02	128	122	6.26	Smells Like Teen Spirit	Eagles
+2025-10-03	159	147	6.63	Smells Like Teen Spirit	Madonna
+2025-10-04	139	123	6.58	Billie Jean	Led Zeppelin
+2025-10-05	156	145	6.92	Hotel California	Pink Floyd
+2025-10-06	124	117	7.02	Comfortably Numb	AC/DC
+2025-10-07	153	147	6.82	Smells Like Teen Spirit	Madonna
+2025-10-08	129	119	7.11	Comfortably Numb	Madonna
+2025-10-09	134	127	6.76	Like a Prayer	Pink Floyd
+2025-10-10	145	133	6.78	Hey Jude	Eagles
+2025-10-11	125	118	6.66	Bohemian Rhapsody	U2
+2025-10-12	122	113	6.77	Stairway to Heaven	Queen
+2025-10-13	133	122	7.08	With or Without You	AC/DC
+2025-10-14	139	133	6.60	Hey Jude	Led Zeppelin
+2025-10-15	123	116	6.82	Back in Black	The Beatles
+2025-10-16	140	132	6.54	Hey Jude	Madonna
+2025-10-17	137	128	7.24	Like a Prayer	Eagles
+2025-10-18	105	103	6.59	Comfortably Numb	U2
+2025-10-19	133	125	6.56	Hey Jude	U2
+2025-10-20	138	134	6.77	Hotel California	Pink Floyd
+2025-10-21	119	115	6.30	Stairway to Heaven	Michael Jackson
+2025-10-22	127	118	6.67	Billie Jean	Led Zeppelin
+2025-10-23	145	139	6.45	Like a Prayer	AC/DC
+2025-10-24	135	131	6.12	Stairway to Heaven	AC/DC
+2025-10-25	129	122	6.64	Stairway to Heaven	Nirvana
+2025-10-26	148	136	6.66	Like a Prayer	Led Zeppelin
+2025-10-27	143	132	6.72	With or Without You	U2
+2025-10-28	110	106	6.77	Hotel California	Pink Floyd
+2025-10-29	127	117	6.39	With or Without You	Pink Floyd
+2025-10-30	143	133	6.76	Billie Jean	Eagles
+2025-10-31	153	140	6.61	Bohemian Rhapsody	Pink Floyd
+2025-11-01	139	132	6.51	Billie Jean	Led Zeppelin
+2025-11-02	138	131	6.70	Like a Prayer	U2
+2025-11-03	128	120	6.73	Like a Prayer	Michael Jackson
+2025-11-04	142	132	6.80	Back in Black	Led Zeppelin
+2025-11-05	130	122	6.94	Hotel California	Led Zeppelin
+2025-11-06	130	122	6.80	Bohemian Rhapsody	Pink Floyd
+2025-11-07	149	140	6.51	Like a Prayer	Led Zeppelin
+2025-11-08	132	122	6.42	Comfortably Numb	Eagles
+2025-11-09	141	132	6.88	Bohemian Rhapsody	Led Zeppelin
+2025-11-10	124	114	6.84	Stairway to Heaven	Michael Jackson
+2025-11-11	151	142	6.56	Like a Prayer	Madonna
+2025-11-12	165	149	6.99	Hey Jude	Queen
+2025-11-13	135	127	6.67	Back in Black	AC/DC
+2025-11-14	126	117	7.08	With or Without You	The Beatles
+2025-11-15	129	122	6.41	With or Without You	Michael Jackson
+2025-11-16	131	124	6.36	Bohemian Rhapsody	U2
+2025-11-17	137	131	6.41	Back in Black	The Beatles
+2025-11-18	154	147	6.62	Billie Jean	The Beatles
+2025-11-19	122	115	6.61	Comfortably Numb	Pink Floyd
+2025-11-20	122	115	6.97	Bohemian Rhapsody	Eagles
+2025-11-21	144	138	6.00	With or Without You	Michael Jackson
+2025-11-22	140	132	6.96	Comfortably Numb	Madonna
+2025-11-23	144	130	7.35	Bohemian Rhapsody	Pink Floyd
+2025-11-24	131	124	6.47	Back in Black	Pink Floyd
+2025-11-25	155	144	6.56	Hey Jude	Nirvana
+2025-11-26	137	125	7.04	Back in Black	AC/DC
+2025-11-27	144	137	6.33	Smells Like Teen Spirit	Madonna
+2025-11-28	135	128	6.43	Stairway to Heaven	Nirvana
+2025-11-29	136	126	6.72	Bohemian Rhapsody	Led Zeppelin
+2025-11-30	140	132	6.32	Stairway to Heaven	Eagles
+2025-12-01	137	128	6.85	Hotel California	Madonna
+2025-12-02	129	124	6.73	Stairway to Heaven	Michael Jackson
+2025-12-03	150	138	6.49	With or Without You	Eagles
+2025-12-04	161	144	7.11	Stairway to Heaven	The Beatles
+2025-12-05	155	144	6.91	With or Without You	Michael Jackson
+2025-12-06	139	130	6.81	Bohemian Rhapsody	Nirvana
+2025-12-07	150	138	6.72	Hotel California	Nirvana
+2025-12-08	146	134	6.63	Comfortably Numb	Nirvana
+2025-12-09	140	133	6.48	Back in Black	Led Zeppelin
+2025-12-10	135	122	6.87	With or Without You	Pink Floyd
+2025-12-11	133	120	7.25	Like a Prayer	The Beatles
+2025-12-12	146	135	6.63	Stairway to Heaven	Michael Jackson
+2025-12-13	115	104	7.22	Billie Jean	Queen
+2025-12-14	120	111	7.07	Bohemian Rhapsody	Michael Jackson
+2025-12-15	137	131	6.22	Bohemian Rhapsody	Madonna
+2025-12-16	137	125	6.71	Bohemian Rhapsody	The Beatles
+2025-12-17	140	131	7.05	Smells Like Teen Spirit	Eagles
+2025-12-18	132	126	6.46	Billie Jean	Nirvana
+2025-12-19	137	126	6.88	With or Without You	Queen
+2025-12-20	134	125	6.69	With or Without You	Nirvana
+2025-12-21	120	112	6.61	With or Without You	Led Zeppelin
+2025-12-22	139	132	6.71	Back in Black	Eagles
+2025-12-23	120	115	6.19	Bohemian Rhapsody	Led Zeppelin
+2025-12-24	151	140	6.79	Stairway to Heaven	The Beatles
+2025-12-25	141	129	6.97	Stairway to Heaven	Queen
+2025-12-26	138	127	6.80	Hotel California	Madonna
+2025-12-27	113	108	6.46	Hotel California	Madonna
+2025-12-28	133	124	6.50	Stairway to Heaven	The Beatles
+2025-12-29	115	110	6.63	Comfortably Numb	Eagles
+2025-12-30	133	125	6.51	With or Without You	U2
+2025-12-31	137	130	6.64	Billie Jean	Michael Jackson
