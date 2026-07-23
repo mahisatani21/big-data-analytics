@@ -105,32 +105,6 @@ The activities performed include:
 
 ---
 
-# 📸 Screenshots
-
-Include screenshots for the following:
-
-### Phase 1
-
-- Ubuntu Terminal
-- Java Installation
-- Java Version
-- Apache Spark Download
-- Environment Variable Configuration
-- Spark Shell
-- PySpark Startup
-- Spark Version Verification
-
-### Phase 2
-
-- Creating Distributed Dataset
-- DataFrame Output
-- Split Words Output
-- Word Count Output
-- Reading Text File
-- Final Word Count Result
-
----
-
 # 🎓 Learning Outcomes
 
 After completing this project, you will be able to:
