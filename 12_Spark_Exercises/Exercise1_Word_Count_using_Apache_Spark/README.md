@@ -19,4 +19,3 @@ python word_count.py
 - Apache Spark
 - PySpark
 - Python 3.12
-```
