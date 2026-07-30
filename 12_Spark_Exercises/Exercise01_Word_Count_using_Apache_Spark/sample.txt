@@ -1,0 +1,6 @@
+Hello Spark
+Hello World
+Spark makes Big Data easy
+Big Data is powerful
+Spark Spark Hello
+
