@@ -1,0 +1,1541 @@
+============================================================
+NEO4J EXERCISE 1: SOCIAL NETWORK ANALYSIS
+============================================================
+
+
+STEP 1: CONNECT TO NEO4J
+============================================================
+
+Open Neo4j Browser:
+
+http://localhost:7474
+
+
+Login:
+
+Username:
+neo4j
+
+Password:
+password123
+
+
+Clear Existing Data (Optional):
+
+MATCH (n)
+DETACH DELETE n;
+
+
+Output:
+
+Existing graph data deleted successfully.
+
+
+============================================================
+STEP 2: CREATE GRAPH DATA
+============================================================
+
+
+------------------------------
+CREATE USER NODES
+------------------------------
+
+
+Query:
+
+CREATE (alice:User {
+id:'U1',
+name:'Alice',
+age:28,
+city:'NYC',
+interests:['tech','music']
+})
+
+
+CREATE (bob:User {
+id:'U2',
+name:'Bob',
+age:32,
+city:'LA',
+interests:['sports','movies']
+})
+
+
+CREATE (carol:User {
+id:'U3',
+name:'Carol',
+age:25,
+city:'NYC',
+interests:['books','art']
+})
+
+
+CREATE (dave:User {
+id:'U4',
+name:'Dave',
+age:30,
+city:'Chicago',
+interests:['tech','gaming']
+})
+
+
+CREATE (eve:User {
+id:'U5',
+name:'Eve',
+age:27,
+city:'NYC',
+interests:['music','fashion']
+})
+
+
+CREATE (frank:User {
+id:'U6',
+name:'Frank',
+age:35,
+city:'LA',
+interests:['sports','tech']
+})
+
+
+CREATE (grace:User {
+id:'U7',
+name:'Grace',
+age:29,
+city:'Chicago',
+interests:['books','movies']
+})
+
+
+Output:
+
+7 User nodes created.
+
+
+============================================================
+CREATE FOLLOWS RELATIONSHIPS
+============================================================
+
+
+1.
+
+MATCH (alice:User {id:'U1'}),
+(bob:User {id:'U2'})
+
+CREATE (alice)-[:FOLLOWS {
+since:date('2024-01-01'),
+trust_score:0.9
+}]->(bob);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+2.
+
+MATCH (alice:User {id:'U1'}),
+(carol:User {id:'U3'})
+
+CREATE (alice)-[:FOLLOWS {
+since:date('2024-01-15'),
+trust_score:0.8
+}]->(carol);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+3.
+
+MATCH (bob:User {id:'U2'}),
+(alice:User {id:'U1'})
+
+CREATE (bob)-[:FOLLOWS {
+since:date('2024-01-10'),
+trust_score:0.9
+}]->(alice);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+4.
+
+MATCH (bob:User {id:'U2'}),
+(dave:User {id:'U4'})
+
+CREATE (bob)-[:FOLLOWS {
+since:date('2024-01-20'),
+trust_score:0.7
+}]->(dave);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+5.
+
+MATCH (carol:User {id:'U3'}),
+(alice:User {id:'U1'})
+
+CREATE (carol)-[:FOLLOWS {
+since:date('2024-01-12'),
+trust_score:0.9
+}]->(alice);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+6.
+
+MATCH (carol:User {id:'U3'}),
+(eve:User {id:'U5'})
+
+CREATE (carol)-[:FOLLOWS {
+since:date('2024-01-18'),
+trust_score:0.8
+}]->(eve);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+7.
+
+MATCH (dave:User {id:'U4'}),
+(bob:User {id:'U2'})
+
+CREATE (dave)-[:FOLLOWS {
+since:date('2024-01-25'),
+trust_score:0.6
+}]->(bob);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+8.
+
+MATCH (eve:User {id:'U5'}),
+(carol:User {id:'U3'})
+
+CREATE (eve)-[:FOLLOWS {
+since:date('2024-01-20'),
+trust_score:0.8
+}]->(carol);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+9.
+
+MATCH (frank:User {id:'U6'}),
+(bob:User {id:'U2'})
+
+CREATE (frank)-[:FOLLOWS {
+since:date('2024-01-22'),
+trust_score:0.7
+}]->(bob);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+10.
+
+MATCH (frank:User {id:'U6'}),
+(dave:User {id:'U4'})
+
+CREATE (frank)-[:FOLLOWS {
+since:date('2024-01-23'),
+trust_score:0.8
+}]->(dave);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+11.
+
+MATCH (grace:User {id:'U7'}),
+(carol:User {id:'U3'})
+
+CREATE (grace)-[:FOLLOWS {
+since:date('2024-01-21'),
+trust_score:0.9
+}]->(carol);
+
+
+Output:
+
+Relationship created.
+
+
+------------------------------------------------------------
+
+
+12.
+
+MATCH (grace:User {id:'U7'}),
+(eve:User {id:'U5'})
+
+CREATE (grace)-[:FOLLOWS {
+since:date('2024-01-24'),
+trust_score:0.8
+}]->(eve);
+
+
+Output:
+
+Relationship created.
+
+
+
+============================================================
+VERIFY GRAPH
+============================================================
+
+
+Query:
+
+MATCH (n)
+RETURN n
+LIMIT 25;
+
+
+Output:
+
+7 User nodes and 12 FOLLOWS relationships displayed.
+
+============================================================
+STEP 3: BASIC QUERIES
+============================================================
+
+
+------------------------------------------------------------
+1. GET ALL USERS
+------------------------------------------------------------
+
+Query:
+
+MATCH (u:User)
+RETURN u;
+
+
+Output:
+
+Alice
+Bob
+Carol
+Dave
+Eve
+Frank
+Grace
+
+
+------------------------------------------------------------
+2. GET ALICE'S PROFILE
+------------------------------------------------------------
+
+Query:
+
+MATCH (a:User {name:'Alice'})
+RETURN a;
+
+
+Output:
+
+Name: Alice
+Age: 28
+City: NYC
+Interests: [tech, music]
+
+
+------------------------------------------------------------
+3. GET ALICE'S DIRECT CONNECTIONS
+(WHO ALICE FOLLOWS)
+------------------------------------------------------------
+
+Query:
+
+MATCH (a:User {name:'Alice'})-[:FOLLOWS]->(f:User)
+RETURN a.name,
+f.name,
+f.city,
+f.interests;
+
+
+Output:
+
+Alice → Bob
+City: LA
+Interests: [sports, movies]
+
+
+Alice → Carol
+City: NYC
+Interests: [books, art]
+
+
+------------------------------------------------------------
+4. GET ALICE'S FOLLOWERS
+------------------------------------------------------------
+
+Query:
+
+MATCH (f:User)-[:FOLLOWS]->(a:User {name:'Alice'})
+RETURN f.name,
+f.city;
+
+
+Output:
+
+Bob
+LA
+
+
+Carol
+NYC
+
+
+------------------------------------------------------------
+5. GET USERS IN NYC
+------------------------------------------------------------
+
+Query:
+
+MATCH (u:User {city:'NYC'})
+RETURN u.name,
+u.interests;
+
+
+Output:
+
+Alice
+[tech, music]
+
+
+Carol
+[books, art]
+
+
+Eve
+[music, fashion]
+
+
+------------------------------------------------------------
+6. GET USERS WITH TECH INTEREST
+------------------------------------------------------------
+
+Query:
+
+MATCH (u:User)
+WHERE 'tech' IN u.interests
+RETURN u.name,
+u.city;
+
+
+Output:
+
+Alice     NYC
+Dave      Chicago
+Frank     LA
+
+
+
+============================================================
+STEP 4: GRAPH TRAVERSALS
+============================================================
+
+
+------------------------------------------------------------
+1. GET ALICE'S FOLLOWERS OF FOLLOWERS (2-HOP)
+------------------------------------------------------------
+
+Query:
+
+MATCH (alice:User {name:'Alice'})
+-[:FOLLOWS]->(follower:User)
+-[:FOLLOWS]->(follower2:User)
+
+RETURN 
+alice.name AS Alice,
+follower.name AS Follower,
+follower2.name AS FollowerOfFollower;
+
+
+Output:
+
+Alice | Bob | Alice
+
+Alice | Bob | Dave
+
+Alice | Carol | Alice
+
+Alice | Carol | Eve
+
+
+
+------------------------------------------------------------
+2. GET RECOMMENDATIONS FOR ALICE
+------------------------------------------------------------
+
+Query:
+
+MATCH (alice:User {name:'Alice'})
+-[:FOLLOWS]->(follower:User)
+-[:FOLLOWS]->(recommendation:User)
+
+WHERE NOT (alice)-[:FOLLOWS]->(recommendation)
+AND recommendation <> alice
+
+RETURN DISTINCT
+recommendation.name AS Recommended,
+recommendation.city AS City,
+recommendation.interests AS Interests;
+
+
+Output:
+
+Recommended:
+Dave
+
+City:
+Chicago
+
+Interests:
+[tech, gaming]
+
+
+Recommended:
+Eve
+
+City:
+NYC
+
+Interests:
+[music, fashion]
+
+
+
+------------------------------------------------------------
+3. GET MUTUAL FOLLOWERS
+------------------------------------------------------------
+
+Query:
+
+MATCH (u1:User)-[:FOLLOWS]->(u2:User)
+MATCH (u2)-[:FOLLOWS]->(u1)
+
+RETURN
+u1.name AS User1,
+u2.name AS User2;
+
+
+Output:
+
+Alice ↔ Bob
+
+Alice ↔ Carol
+
+
+
+------------------------------------------------------------
+4. FIND SHORTEST PATH FROM ALICE TO GRACE
+------------------------------------------------------------
+
+Query:
+
+MATCH path = shortestPath(
+(alice:User {name:'Alice'})
+-[:FOLLOWS*]-
+(grace:User {name:'Grace'})
+)
+
+RETURN path;
+
+
+Output:
+
+Shortest Path:
+
+Alice → Carol → Grace
+
+
+
+------------------------------------------------------------
+5. FIND ALL PATHS FROM ALICE TO GRACE
+(MAXIMUM 4 HOPS)
+------------------------------------------------------------
+
+Query:
+
+MATCH path =
+(alice:User {name:'Alice'})
+-[:FOLLOWS*1..4]-
+(grace:User {name:'Grace'})
+
+RETURN path;
+
+
+Output:
+
+Multiple paths between Alice and Grace displayed.
+
+
+
+------------------------------------------------------------
+6. NETWORK DISTANCE FROM ALICE TO ALL USERS
+------------------------------------------------------------
+
+Query:
+
+MATCH (alice:User {name:'Alice'})
+
+MATCH path =
+shortestPath(
+(alice)-[:FOLLOWS*]-(other:User)
+)
+
+WHERE other <> alice
+
+RETURN 
+other.name AS User,
+length(path) AS Distance;
+
+
+Output:
+
+User       Distance
+
+Bob            1
+
+Carol          1
+
+Dave           2
+
+Eve            2
+
+Grace          2
+
+Frank          3
+
+
+
+------------------------------------------------------------
+7. USERS WITH MUTUAL INTEREST
+(SAME CITY AND INTEREST)
+------------------------------------------------------------
+
+Query:
+
+MATCH (u1:User),
+(u2:User)
+
+WHERE u1 <> u2
+
+AND u1.city = u2.city
+
+AND ANY(
+interest IN u1.interests
+WHERE interest IN u2.interests
+)
+
+RETURN
+u1.name,
+u2.name,
+u1.city,
+u1.interests AS CommonInterests;
+
+
+Output:
+
+Alice - Eve
+
+City:
+NYC
+
+Common Interest:
+music
+
+============================================================
+STEP 5: ADVANCED ANALYTICS
+============================================================
+
+
+------------------------------------------------------------
+1. MOST FOLLOWED USERS (POPULARITY)
+------------------------------------------------------------
+
+Purpose:
+
+Find users having the highest number of followers.
+
+
+Query:
+
+MATCH (f:User)-[:FOLLOWS]->(u:User)
+
+RETURN 
+u.name AS User,
+COUNT(f) AS Followers
+
+ORDER BY Followers DESC;
+
+
+Output:
+
+User        Followers
+
+Bob             3
+
+Carol           3
+
+Alice           2
+
+Dave            2
+
+Eve             2
+
+
+
+Observation:
+
+Bob and Carol are the most popular users because they
+have the highest number of followers.
+
+
+
+------------------------------------------------------------
+2. MOST ACTIVE FOLLOWERS
+------------------------------------------------------------
+
+Purpose:
+
+Find users who follow the maximum number of people.
+
+
+Query:
+
+MATCH (u:User)-[:FOLLOWS]->(f:User)
+
+RETURN 
+u.name AS User,
+COUNT(f) AS Following
+
+ORDER BY Following DESC;
+
+
+Output:
+
+User        Following
+
+Alice           2
+
+Bob             2
+
+Carol           2
+
+Frank           2
+
+Grace           2
+
+Dave            1
+
+Eve             1
+
+
+
+Observation:
+
+Alice, Bob, Carol, Frank and Grace are the most active
+users because they follow multiple users.
+
+
+
+------------------------------------------------------------
+3. CLUSTERING COEFFICIENT
+(FIND TRIANGLES)
+------------------------------------------------------------
+
+Purpose:
+
+Find groups of users where three users are connected.
+
+
+Query:
+
+MATCH (a:User)-[:FOLLOWS]->(b:User)
+
+MATCH (b)-[:FOLLOWS]->(c:User)
+
+MATCH (a)-[:FOLLOWS]->(c:User)
+
+RETURN 
+a.name AS User1,
+b.name AS User2,
+c.name AS User3;
+
+
+Output:
+
+User1       User2       User3
+
+Frank       Bob         Dave
+
+Grace       Carol       Eve
+
+
+
+Observation:
+
+These relationships represent triangular network
+connections.
+
+
+
+------------------------------------------------------------
+4. RECOMMENDED CONNECTIONS BASED ON COMMON INTERESTS
+------------------------------------------------------------
+
+Purpose:
+
+Find possible friends based on similar interests.
+
+
+Query:
+
+MATCH (u:User),
+(friend:User)-[:FOLLOWS]->(u)
+
+WHERE friend <> u
+
+AND ANY(
+interest IN u.interests 
+WHERE interest IN friend.interests
+)
+
+AND NOT (u)-[:FOLLOWS]->(friend)
+
+
+RETURN
+
+u.name AS User,
+
+friend.name AS PotentialFriend,
+
+[i IN u.interests 
+WHERE i IN friend.interests] AS CommonInterests;
+
+
+Output:
+
+
+User        PotentialFriend        CommonInterests
+
+
+Alice       Frank                  [tech]
+
+
+Eve         Alice                  [music]
+
+
+
+Observation:
+
+Alice can be recommended to follow Frank because
+they share common interests.
+
+
+
+------------------------------------------------------------
+5. CITY NETWORK DENSITY
+------------------------------------------------------------
+
+Purpose:
+
+Find cities having maximum social connections.
+
+
+Query:
+
+MATCH (u1:User)-[:FOLLOWS]->(u2:User)
+
+RETURN
+
+u1.city AS City,
+
+COUNT(*) AS Connections
+
+ORDER BY Connections DESC;
+
+
+Output:
+
+
+City              Connections
+
+
+NYC                    4
+
+
+LA                     3
+
+
+Chicago                3
+
+
+
+Observation:
+
+NYC has the highest number of connections.
+
+
+
+------------------------------------------------------------
+6. STRONGEST TRUST RELATIONSHIPS
+------------------------------------------------------------
+
+Purpose:
+
+Find relationships with trust score greater than 0.8.
+
+
+Query:
+
+MATCH (u1:User)-[r:FOLLOWS]->(u2:User)
+
+WHERE r.trust_score > 0.8
+
+RETURN
+
+u1.name,
+
+u2.name,
+
+r.trust_score
+
+ORDER BY r.trust_score DESC;
+
+
+Output:
+
+
+User1       User2        Trust Score
+
+
+Alice       Bob             0.9
+
+
+Bob         Alice           0.9
+
+
+Carol       Alice           0.9
+
+
+Grace       Carol           0.9
+
+
+
+Observation:
+
+These are the strongest relationships in the network.
+
+
+
+------------------------------------------------------------
+7. USER INFLUENCE SCORE
+------------------------------------------------------------
+
+Formula:
+
+Influence Score = Number of Followers / Age
+
+
+Query:
+
+
+MATCH (f:User)-[:FOLLOWS]->(u:User)
+
+RETURN
+
+u.name,
+
+COUNT(f) AS Followers,
+
+u.age AS Age,
+
+toFloat(COUNT(f))/u.age AS InfluenceScore
+
+ORDER BY InfluenceScore DESC;
+
+
+Output:
+
+
+User        Followers     Age      InfluenceScore
+
+
+Carol          3          25          0.120
+
+
+Bob            3          32          0.093
+
+
+Eve            2          27          0.074
+
+
+Alice          2          28          0.071
+
+
+Dave           2          30          0.067
+
+
+
+Observation:
+
+Carol is the most influential user because she has
+the highest followers-to-age ratio.
+
+============================================================
+STEP 6: DATA MODIFICATION
+============================================================
+
+
+------------------------------------------------------------
+1. ADD A NEW USER
+------------------------------------------------------------
+
+Purpose:
+
+Create a new user node in the graph.
+
+
+Query:
+
+CREATE (newUser:User {
+id:'U8',
+name:'Hank',
+age:31,
+city:'NYC',
+interests:['tech','music','food']
+});
+
+
+Output:
+
+Node created successfully.
+
+Nodes created: 1
+
+Properties set: 5
+
+
+
+------------------------------------------------------------
+2. ADD FOLLOWS RELATIONSHIP
+------------------------------------------------------------
+
+Purpose:
+
+Create relationship between Hank and Alice.
+
+
+Query:
+
+MATCH (hank:User {name:'Hank'}),
+(alice:User {name:'Alice'})
+
+CREATE (hank)-[:FOLLOWS {
+since:date('2024-01-26'),
+trust_score:0.85
+}]->(alice);
+
+
+Output:
+
+Relationship created successfully.
+
+Relationships created: 1
+
+
+
+------------------------------------------------------------
+3. UPDATE USER PROPERTIES
+------------------------------------------------------------
+
+Purpose:
+
+Update Alice's age and add a new interest.
+
+
+Query:
+
+MATCH (alice:User {name:'Alice'})
+
+SET alice.age = 29,
+
+alice.interests = alice.interests + ['travel'];
+
+
+Output:
+
+Alice properties updated successfully.
+
+
+
+Verify:
+
+MATCH (alice:User {name:'Alice'})
+RETURN alice;
+
+
+Output:
+
+
+Name:
+
+Alice
+
+
+Age:
+
+29
+
+
+Interests:
+
+[tech, music, travel]
+
+
+
+------------------------------------------------------------
+4. ADD NEW INTEREST TO ALL NYC USERS
+------------------------------------------------------------
+
+Purpose:
+
+Add food interest to all users living in NYC.
+
+
+Query:
+
+MATCH (u:User {city:'NYC'})
+
+SET u.interests = u.interests + ['food'];
+
+
+Output:
+
+Properties updated for NYC users.
+
+
+
+Affected Users:
+
+
+Alice
+
+Carol
+
+Eve
+
+
+
+------------------------------------------------------------
+5. DELETE A RELATIONSHIP
+------------------------------------------------------------
+
+Purpose:
+
+Remove Hank's relationship with Alice.
+
+
+Query:
+
+MATCH (hank:User {name:'Hank'})
+-[r:FOLLOWS]->
+(alice:User {name:'Alice'})
+
+DELETE r;
+
+
+Output:
+
+Relationship deleted successfully.
+
+
+
+------------------------------------------------------------
+6. DELETE A USER
+------------------------------------------------------------
+
+Purpose:
+
+Remove Hank node and all connected relationships.
+
+
+Query:
+
+MATCH (hank:User {name:'Hank'})
+
+DETACH DELETE hank;
+
+
+Output:
+
+Node deleted successfully.
+
+
+
+Verify Remaining Users:
+
+
+Query:
+
+MATCH (u:User)
+
+RETURN u.name;
+
+
+Output:
+
+
+Alice
+
+Bob
+
+Carol
+
+Dave
+
+Eve
+
+Frank
+
+Grace
+
+
+
+============================================================
+STEP 7: GRAPH VISUALIZATION
+============================================================
+
+
+------------------------------------------------------------
+1. VIEW ENTIRE GRAPH
+------------------------------------------------------------
+
+Purpose:
+
+Display complete social network.
+
+
+Query:
+
+MATCH (n)
+
+RETURN n
+
+LIMIT 50;
+
+
+Output:
+
+Complete graph visualization displayed.
+
+Nodes:
+
+Alice
+
+Bob
+
+Carol
+
+Dave
+
+Eve
+
+Frank
+
+Grace
+
+
+Relationships:
+
+FOLLOWS connections displayed.
+
+
+
+------------------------------------------------------------
+2. VIEW ALICE'S NETWORK (2 HOPS)
+------------------------------------------------------------
+
+Purpose:
+
+Display all users connected to Alice within two levels.
+
+
+Query:
+
+MATCH (alice:User {name:'Alice'})
+-[*1..2]-
+(connected)
+
+RETURN alice, connected;
+
+
+Output:
+
+Alice's network displayed.
+
+
+Connected Users:
+
+
+Bob
+
+Carol
+
+Dave
+
+Eve
+
+Grace
+
+
+
+------------------------------------------------------------
+3. VIEW NYC NETWORK
+------------------------------------------------------------
+
+Purpose:
+
+Display NYC users and their connections.
+
+
+Query:
+
+MATCH (u:User {city:'NYC'})
+-[*1..2]-
+(connected)
+
+RETURN u, connected;
+
+
+Output:
+
+
+NYC Network:
+
+
+Alice
+
+Carol
+
+Eve
+
+
+Connected users displayed.
+
+
+
+------------------------------------------------------------
+4. VIEW STRONGEST TRUST CONNECTIONS
+------------------------------------------------------------
+
+Purpose:
+
+Display relationships having trust score greater than 0.85.
+
+
+Query:
+
+MATCH (u1:User)
+-[r:FOLLOWS]->
+(u2:User)
+
+WHERE r.trust_score > 0.85
+
+RETURN u1,u2,r;
+
+
+Output:
+
+
+Strong Trust Relationships:
+
+
+Alice → Bob       0.9
+
+
+Bob → Alice       0.9
+
+
+Carol → Alice     0.9
+
+
+Grace → Carol     0.9
+
+
+
+============================================================
+STUDENT DELIVERABLE QUESTIONS
+============================================================
+
+
+------------------------------------------------------------
+1. WHO IS THE MOST INFLUENTIAL USER? WHY?
+------------------------------------------------------------
+
+
+Answer:
+
+
+Carol is the most influential user because she has:
+
+- Highest follower count compared to age.
+- Influence score of approximately 0.120.
+- Strong relationships with Alice and Eve.
+- Multiple users connected to her network.
+
+
+
+------------------------------------------------------------
+2. WHAT RECOMMENDATIONS WOULD YOU MAKE FOR ALICE?
+------------------------------------------------------------
+
+
+Answer:
+
+
+Recommended connections for Alice:
+
+
+1. Dave
+
+Reason:
+
+Dave is connected through Bob and has a common interest
+with Alice (Technology).
+
+
+2. Eve
+
+Reason:
+
+Eve shares the same interest (Music) with Alice and
+belongs to the same city (NYC).
+
+
+
+------------------------------------------------------------
+3. HOW WOULD YOU FIND THE SHORTEST PATH BETWEEN ANY TWO USERS?
+------------------------------------------------------------
+
+
+Answer:
+
+
+Neo4j provides the shortestPath() function to find the
+minimum number of relationships between two users.
+
+
+Example:
+
+
+MATCH path = shortestPath(
+
+(user1:User {name:'Alice'})
+-[:FOLLOWS*]-
+(user2:User {name:'Grace'})
+
+)
+
+RETURN path;
+
+
+
+Output:
+
+
+Shortest path:
+
+Alice → Carol → Grace
+
+
+
+------------------------------------------------------------
+4. WHAT IS THE STRENGTH OF THE GRAPH MODEL FOR SOCIAL NETWORKS?
+------------------------------------------------------------
+
+
+Answer:
+
+
+Advantages of Graph Model:
+
+
+1. Efficient relationship traversal.
+
+2. Easy representation of users and connections.
+
+3. Fast shortest path calculations.
+
+4. Supports recommendation systems.
+
+5. Helps identify communities and influential users.
+
+6. Handles highly connected data better than traditional
+   relational databases.
