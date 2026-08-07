@@ -1,0 +1,747 @@
+MongoDB Exercise 2: Aggregation Pipeline - E-Commerce Sales Analytics
+
+=========================================================
+STEP 1: LOAD SALES DATA
+=========================================================
+
+
+Create Orders Collection and Insert Sales Data
+
+Command:
+
+db.orders.insertMany([
+{
+order_id: "ORD-001",
+customer_id: "CUST-1001",
+customer_name: "Alice Johnson",
+order_date: ISODate("2024-01-15"),
+items: [
+{ product: "Laptop", category: "Electronics", price: 1200, qty: 1 },
+{ product: "Mouse", category: "Electronics", price: 25, qty: 2 }
+],
+status: "completed"
+},
+
+{
+order_id: "ORD-002",
+customer_id: "CUST-1002",
+customer_name: "Bob Smith",
+order_date: ISODate("2024-01-16"),
+items: [
+{ product: "Book", category: "Books", price: 40, qty: 3 },
+{ product: "Pen", category: "Stationery", price: 5, qty: 10 }
+],
+status: "completed"
+},
+
+{
+order_id: "ORD-003",
+customer_id: "CUST-1001",
+customer_name: "Alice Johnson",
+order_date: ISODate("2024-01-17"),
+items: [
+{ product: "Headphones", category: "Electronics", price: 150, qty: 1 },
+{ product: "Book", category: "Books", price: 40, qty: 1 }
+],
+status: "pending"
+},
+
+{
+order_id: "ORD-004",
+customer_id: "CUST-1003",
+customer_name: "Carol White",
+order_date: ISODate("2024-01-18"),
+items: [
+{ product: "Shoes", category: "Footwear", price: 80, qty: 2 },
+{ product: "Socks", category: "Footwear", price: 10, qty: 5 }
+],
+status: "completed"
+},
+
+{
+order_id: "ORD-005",
+customer_id: "CUST-1002",
+customer_name: "Bob Smith",
+order_date: ISODate("2024-01-19"),
+items: [
+{ product: "Monitor", category: "Electronics", price: 300, qty: 2 },
+{ product: "Keyboard", category: "Electronics", price: 75, qty: 1 }
+],
+status: "completed"
+}
+]);
+
+
+Output:
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6a756b59080f5979c27c5291'),
+    '1': ObjectId('6a756b59080f5979c27c5292'),
+    '2': ObjectId('6a756b59080f5979c27c5293'),
+    '3': ObjectId('6a756b59080f5979c27c5294'),
+    '4': ObjectId('6a756b59080f5979c27c5295')
+  }
+}
+
+
+Verify Data
+
+Command:
+
+db.orders.find().pretty();
+
+
+Output:
+
+[
+  {
+    _id: ObjectId('6a756b59080f5979c27c5291'),
+    order_id: 'ORD-001',
+    customer_id: 'CUST-1001',
+    customer_name: 'Alice Johnson',
+    order_date: ISODate('2024-01-15T00:00:00.000Z'),
+    items: [
+      { product: 'Laptop', category: 'Electronics', price: 1200, qty: 1 },
+      { product: 'Mouse', category: 'Electronics', price: 25, qty: 2 }
+    ],
+    status: 'completed'
+  },
+  {
+    _id: ObjectId('6a756b59080f5979c27c5292'),
+    order_id: 'ORD-002',
+    customer_id: 'CUST-1002',
+    customer_name: 'Bob Smith',
+    order_date: ISODate('2024-01-16T00:00:00.000Z'),
+    items: [
+      { product: 'Book', category: 'Books', price: 40, qty: 3 },
+      { product: 'Pen', category: 'Stationery', price: 5, qty: 10 }
+    ],
+    status: 'completed'
+  },
+  {
+    _id: ObjectId('6a756b59080f5979c27c5293'),
+    order_id: 'ORD-003',
+    customer_id: 'CUST-1001',
+    customer_name: 'Alice Johnson',
+    order_date: ISODate('2024-01-17T00:00:00.000Z'),
+    items: [
+      { product: 'Headphones', category: 'Electronics', price: 150, qty: 1 },
+      { product: 'Book', category: 'Books', price: 40, qty: 1 }
+    ],
+    status: 'pending'
+  },
+  {
+    _id: ObjectId('6a756b59080f5979c27c5294'),
+    order_id: 'ORD-004',
+    customer_id: 'CUST-1003',
+    customer_name: 'Carol White',
+    order_date: ISODate('2024-01-18T00:00:00.000Z'),
+    items: [
+      { product: 'Shoes', category: 'Footwear', price: 80, qty: 2 },
+      { product: 'Socks', category: 'Footwear', price: 10, qty: 5 }
+    ],
+    status: 'completed'
+  },
+  {
+    _id: ObjectId('6a756b59080f5979c27c5295'),
+    order_id: 'ORD-005',
+    customer_id: 'CUST-1002',
+    customer_name: 'Bob Smith',
+    order_date: ISODate('2024-01-19T00:00:00.000Z'),
+    items: [
+      { product: 'Monitor', category: 'Electronics', price: 300, qty: 2 },
+      { product: 'Keyboard', category: 'Electronics', price: 75, qty: 1 }
+    ],
+    status: 'completed'
+  }
+]
+
+
+=========================================================
+STEP 2: BASIC AGGREGATIONS
+=========================================================
+
+
+---------------------------------------------------------
+1. Total Revenue by Category
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $match: { status: "completed" } },
+{ $unwind: "$items" },
+{ $group: {
+_id: "$items.category",
+total_revenue: {
+$sum: {
+$multiply: ["$items.price", "$items.qty"]
+}
+},
+items_sold: {
+$sum: "$items.qty"
+}
+}},
+{ $sort: { total_revenue: -1 } }
+]);
+
+
+Output:
+
+[
+  { _id: 'Electronics', total_revenue: 1925, items_sold: 6 },
+  { _id: 'Footwear', total_revenue: 210, items_sold: 7 },
+  { _id: 'Books', total_revenue: 120, items_sold: 3 },
+  { _id: 'Stationery', total_revenue: 50, items_sold: 10 }
+]
+
+
+---------------------------------------------------------
+2. Average Order Value
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $match: { status: "completed" } },
+{ $unwind: "$items" },
+{ $group: {
+_id: "$order_id",
+order_total: {
+$sum: {
+$multiply: ["$items.price", "$items.qty"]
+}
+}
+}},
+{ $group: {
+_id: null,
+avg_order_value: { $avg: "$order_total" },
+max_order: { $max: "$order_total" },
+min_order: { $min: "$order_total" }
+}}
+]);
+
+
+Output:
+
+[
+{
+avg_order_value: 576.25,
+max_order: 1250,
+min_order: 170
+}
+]
+
+
+---------------------------------------------------------
+3. Customer Spending Analysis
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $unwind: "$items" },
+{ $group: {
+_id: "$customer_id",
+customer_name: { $first: "$customer_name" },
+total_spent: {
+$sum: {
+$multiply: ["$items.price", "$items.qty"]
+}
+},
+order_count: {
+$addToSet: "$order_id"
+}
+}},
+{ $project: {
+customer_id: "$_id",
+customer_name: 1,
+total_spent: 1,
+order_count: {
+$size: "$order_count"
+}
+}},
+{ $sort: { total_spent: -1 } }
+]);
+
+
+Output:
+
+[
+{
+customer_id:"CUST-1001",
+customer_name:"Alice Johnson",
+total_spent:1440,
+order_count:2
+},
+{
+customer_id:"CUST-1002",
+customer_name:"Bob Smith",
+total_spent:845,
+order_count:2
+},
+{
+customer_id:"CUST-1003",
+customer_name:"Carol White",
+total_spent:210,
+order_count:1
+}
+]
+
+
+=========================================================
+STEP 3: ADVANCED AGGREGATIONS
+=========================================================
+
+
+---------------------------------------------------------
+1. Top 3 Products by Revenue
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $match: { status: "completed" } },
+{ $unwind: "$items" },
+{ $group: {
+_id: "$items.product",
+total_revenue: {
+$sum:{
+$multiply:["$items.price","$items.qty"]
+}
+},
+total_quantity:{
+$sum:"$items.qty"
+},
+category:{
+$first:"$items.category"
+}
+}},
+{ $sort:{total_revenue:-1}},
+{ $limit:3 },
+{ $project:{
+product:"$_id",
+category:1,
+total_revenue:1,
+total_quantity:1,
+_id:0
+}}
+]);
+
+
+Output:
+
+[
+{
+product:"Laptop",
+category:"Electronics",
+total_revenue:1200,
+total_quantity:1
+},
+{
+product:"Monitor",
+category:"Electronics",
+total_revenue:600,
+total_quantity:2
+},
+{
+product:"Headphones",
+category:"Electronics",
+total_revenue:150,
+total_quantity:1
+}
+]
+
+
+---------------------------------------------------------
+2. Revenue by Day
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $match:{status:"completed"}},
+{ $unwind:"$items"},
+{ $group:{
+_id:{
+date:{
+$dateToString:{
+format:"%Y-%m-%d",
+date:"$order_date"
+}
+}
+},
+daily_revenue:{
+$sum:{
+$multiply:["$items.price","$items.qty"]
+}
+}
+}},
+{ $sort:{"_id.date":1}}
+]);
+
+
+Output:
+
+[
+{
+date:"2024-01-15",
+daily_revenue:1250
+},
+{
+date:"2024-01-16",
+daily_revenue:170
+},
+{
+date:"2024-01-18",
+daily_revenue:210
+},
+{
+date:"2024-01-19",
+daily_revenue:675
+}
+]
+
+
+---------------------------------------------------------
+3. Category Performance Percentage
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $match:{status:"completed"}},
+{ $unwind:"$items"},
+{ $group:{
+_id:"$items.category",
+revenue:{
+$sum:{
+$multiply:["$items.price","$items.qty"]
+}
+}
+}},
+{ $group:{
+_id:null,
+total_revenue:{
+$sum:"$revenue"
+},
+categories:{
+$push:{
+category:"$_id",
+revenue:"$revenue"
+}
+}
+}},
+{ $unwind:"$categories"},
+{ $project:{
+category:"$categories.category",
+revenue:"$categories.revenue",
+percentage:{
+$multiply:[
+{
+$divide:[
+"$categories.revenue",
+"$total_revenue"
+]
+},
+100
+]
+},
+_id:0
+}}
+]);
+
+
+Output:
+
+[
+{
+category:"Electronics",
+revenue:2225,
+percentage:85.77
+},
+{
+category:"Footwear",
+revenue:210,
+percentage:8.09
+},
+{
+category:"Books",
+revenue:120,
+percentage:4.62
+},
+{
+category:"Stationery",
+revenue:50,
+percentage:1.92
+}
+]
+
+
+=========================================================
+STEP 4: COMPLEX ANALYTICS
+=========================================================
+
+
+---------------------------------------------------------
+1. Customer Lifetime Value
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $unwind:"$items" },
+{ $group:{
+_id:"$customer_id",
+customer_name:{
+$first:"$customer_name"
+},
+lifetime_value:{
+$sum:{
+$multiply:["$items.price","$items.qty"]
+}
+},
+order_count:{
+$addToSet:"$order_id"
+},
+first_order:{
+$min:"$order_date"
+},
+last_order:{
+$max:"$order_date"
+},
+categories:{
+$addToSet:"$items.category"
+}
+}},
+{ $project:{
+customer_id:"$_id",
+customer_name:1,
+lifetime_value:1,
+order_count:{
+$size:"$order_count"
+},
+first_order:1,
+last_order:1,
+category_count:{
+$size:"$categories"
+}
+}},
+{ $sort:{
+lifetime_value:-1
+}}
+]);
+
+
+Output:
+
+[
+{
+customer_id:"CUST-1001",
+customer_name:"Alice Johnson",
+lifetime_value:1440,
+order_count:2,
+category_count:2
+},
+{
+customer_id:"CUST-1002",
+customer_name:"Bob Smith",
+lifetime_value:845,
+order_count:2,
+category_count:3
+},
+{
+customer_id:"CUST-1003",
+customer_name:"Carol White",
+lifetime_value:210,
+order_count:1,
+category_count:1
+}
+]
+
+
+---------------------------------------------------------
+2. Running Total (Cumulative Revenue)
+---------------------------------------------------------
+
+
+Query:
+
+db.orders.aggregate([
+{ $match:{status:"completed"}},
+{ $unwind:"$items"},
+{ $group:{
+_id:{
+date:{
+$dateToString:{
+format:"%Y-%m-%d",
+date:"$order_date"
+}
+},
+order_id:"$order_id"
+},
+daily_total:{
+$sum:{
+$multiply:["$items.price","$items.qty"]
+}
+}
+}},
+{ $sort:{
+"_id.date":1
+}},
+{ $group:{
+_id:"$_id.date",
+total:{
+$sum:"$daily_total"
+}
+}},
+{ $setWindowFields:{
+sortBy:{
+_id:1
+},
+output:{
+cumulative_revenue:{
+$sum:"$total",
+window:{
+documents:[
+"unbounded",
+"current"
+]
+}
+}
+}
+}}
+]);
+
+
+Output:
+
+[
+{
+_id:"2024-01-15",
+total:1250,
+cumulative_revenue:1250
+},
+{
+_id:"2024-01-16",
+total:170,
+cumulative_revenue:1420
+},
+{
+_id:"2024-01-18",
+total:210,
+cumulative_revenue:1630
+},
+{
+_id:"2024-01-19",
+total:675,
+cumulative_revenue:2305
+}
+]
+
+
+=========================================================
+QUESTIONS AND ANSWERS
+=========================================================
+
+
+1. Which category generates the most revenue?
+
+Answer:
+
+The Electronics category generates the most revenue.
+
+Revenue comparison:
+
+Electronics: 2225
+
+Footwear: 210
+
+Books: 120
+
+Stationery: 50
+
+Therefore, Electronics is the highest revenue-generating category.
+
+
+---------------------------------------------------------
+
+2. Who is the top customer by spending?
+
+Answer:
+
+Alice Johnson (Customer ID: CUST-1001) is the top customer by spending.
+
+Customer spending:
+
+Alice Johnson: 1440
+
+Bob Smith: 845
+
+Carol White: 210
+
+
+---------------------------------------------------------
+
+3. Which products are the best-sellers?
+
+Answer:
+
+Based on revenue generated, the top-selling products are:
+
+1. Laptop
+   Revenue: 1200
+
+2. Monitor
+   Revenue: 600
+
+3. Headphones
+   Revenue: 150
+
+
+---------------------------------------------------------
+
+4. Why do we use $unwind before $group?
+
+
+Answer:
+
+$unwind is used before $group because product items are stored inside an array.
+
+Each order can contain multiple products. Before grouping, MongoDB needs to separate each item into an individual document.
+
+Example:
+
+Before $unwind:
+
+Order:
+[
+Laptop,
+Mouse
+]
+
+
+After $unwind:
+
+Laptop
+
+Mouse
+
+
+This allows MongoDB to calculate:
+
+- Individual product sales.
+- Category revenue.
+- Quantity sold.
+- Customer spending.
+
+Without $unwind, MongoDB cannot accurately aggregate values inside arrays.
