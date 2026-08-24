@@ -92,6 +92,7 @@ Micro_Project/
 │
 └── README.md
     └── Project documentation
+```
 
 ## 🏗️ Project Architecture
 
