@@ -1,0 +1,11 @@
+CustomerID,Recency,Frequency,Monetary,R_Score,F_Score,M_Score,RFM_Segment,CustomerTier
+14646,2,73,280206.02,5,5,5,555,Champion
+18102,1,60,259657.3,5,5,5,555,Champion
+17450,9,46,194390.79,5,5,5,555,Champion
+16446,1,2,168472.5,5,3,5,535,Loyal
+14911,2,201,143711.17,5,5,5,555,Champion
+12415,25,21,124914.53,4,5,5,455,Champion
+14156,10,55,117210.08,5,5,5,555,Champion
+17511,3,31,91062.38,5,5,5,555,Champion
+16029,39,63,80850.84,3,5,5,355,Loyal
+12346,326,1,77183.6,1,1,5,115,At Risk / Lost
