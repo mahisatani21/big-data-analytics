@@ -47,13 +47,4 @@ pig-hands-on/
 ├── sample_logs.txt
 ├── user_data.txt
 ├── pig_script.pig
-├── README.md
-└── screenshots/
-    ├── 01_local_mode.png
-    ├── 02_data_processing.png
-    ├── 03_hadoop_services.png
-    ├── 04_hdfs_input.png
-    ├── 05_join_operation.png
-    ├── 06_builtin_functions.png
-    ├── 07_batch_script.png
-    └── 08_hdfs_output.png
+└── README.md
